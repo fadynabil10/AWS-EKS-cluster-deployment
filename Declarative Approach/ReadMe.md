@@ -19,4 +19,4 @@ eksctl create cluster -f eks-cluster-config.yaml
 
 Happy deploying! 🚀
 ---
-💻 **Made with ❤️ by AWS Builders** | [GitHub](https://github.com/simplynadaf/eks-cluster-deployment)
+💻 **Made with ❤️ by AWS Community Builder** | [Reach_Out_2_Me_@](https://www.linkedin.com/in/sarvar04/)
