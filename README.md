@@ -41,4 +41,6 @@ Reach out with questions or for collaboration:
 To get started, clone this repository and refer to the [tutorial blog](https://dev.to/aws-builders/spin-up-an-amazon-eks-cluster-in-minutes-2666-temp-slug-667873?preview=205922cdaf933b01455dba5ef201bc8b1be8e0ab2767205d094c9878ebf54720f80151d0251fb19d9e37d26216e61ac73799e52d91fbe23c37b97530) for detailed setup instructions.
 
 ---
-💻 **Made with ❤️ by AWS Builders** | [GitHub](https://github.com/simplynadaf/eks-cluster-deployment)
+Happy Learning! 🚀
+---
+💻 **Made with ❤️ by AWS Community Builder** | [Reach_Out_2_Me_@](https://www.linkedin.com/in/sarvar04/)
