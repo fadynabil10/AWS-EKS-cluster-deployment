@@ -13,6 +13,8 @@ To bring your Amazon EKS cluster to life, simply use the `eks-cluster-config.yam
 ```bash
 eksctl create cluster -f eks-cluster-config.yaml
 
+```
+
 🎉 That’s it! Your EKS cluster will be up and running in no time. If you need further details or a step-by-step guide, check out this awesome article:  
 [Spin Up an Amazon EKS Cluster in Minutes](https://dev.to/aws-builders/spin-up-an-amazon-eks-cluster-in-minutes-2666-temp-slug-667873?preview=205922cdaf933b01455dba5ef201bc8b1be8e0ab2767205d094c9878ebf54720f80151d0251fb19d9e37d26216e61ac73799e52d91fbe23c37b97530)
 
