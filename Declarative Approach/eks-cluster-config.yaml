@@ -1,0 +1,132 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: dev-eks-cluster
+  region: us-east-1
+  version: "1.24"  
+
+vpc:
+  id: "vpc-xxxxxxx"  
+  subnets:
+    public:
+      us-east-1a:
+        id: "subnet-xxxxxxx"
+      us-east-1b:
+        id: "subnet-xxxxxxx"
+      us-east-1c:
+        id: "subnet-xxxxxxx"
+
+managedNodeGroups:
+  - name: on-demand-ng
+    instanceType: t3.medium  
+    desiredCapacity: 2
+    minSize: 1
+    maxSize: 5
+    volumeSize: 20
+    volumeType: gp3
+    ssh:
+      allow: true
+      publicKeyName: your-keypair  
+    labels:
+      lifecycle: on-demand
+      workload: general
+    tags:
+      Name: "on-demand-ng"
+    iam:
+      withAddonPolicies:
+        albIngress: true       
+        autoScaler: true       
+        imageBuilder: true     
+
+  - name: spot-ng
+    instanceTypes: ["t3.small", "t3.micro"]  
+    desiredCapacity: 2
+    minSize: 1
+    maxSize: 5
+    volumeSize: 20
+    volumeType: gp3
+    ssh:
+      allow: true
+      publicKeyName: your-keypair  
+    labels:
+      lifecycle: spot
+      workload: batch
+    tags:
+      Name: "spot-ng"
+    iam:
+      withAddonPolicies:
+        albIngress: true       
+        autoScaler: true       
+        imageBuilder: true     
+    spot: true  
+
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: dev-eks-cluster
+  region: us-east-1
+  version: "1.24"  
+
+vpc:
+  id: "vpc-xxxxxxx"  
+  subnets:
+    public:
+      us-east-1a:
+        id: "subnet-xxxxxxx"
+      us-east-1b:
+        id: "subnet-xxxxxxx"
+      us-east-1c:
+        id: "subnet-xxxxxxx"
+
+managedNodeGroups:
+  - name: on-demand-ng
+    instanceType: t3.medium  
+    desiredCapacity: 2
+    minSize: 1
+    maxSize: 5
+    volumeSize: 20
+    volumeType: gp3
+    ssh:
+      allow: true
+      publicKeyName: your-keypair  
+    labels:
+      lifecycle: on-demand
+      workload: general
+    tags:
+      Name: "on-demand-ng"
+    iam:
+      withAddonPolicies:
+        albIngress: true       
+        autoScaler: true       
+        imageBuilder: true     
+
+  - name: spot-ng
+    instanceTypes: ["t3.small", "t3.micro"]  
+    desiredCapacity: 2
+    minSize: 1
+    maxSize: 5
+    volumeSize: 20
+    volumeType: gp3
+    ssh:
+      allow: true
+      publicKeyName: your-keypair  
+    labels:
+      lifecycle: spot
+      workload: batch
+    tags:
+      Name: "spot-ng"
+    iam:
+      withAddonPolicies:
+        albIngress: true       
+        autoScaler: true       
+        imageBuilder: true     
+    spot: true  
+
+Thank you to our Diamond Sponsor Neon for supporting our community.
+
+DEV Community — A constructive and inclusive social network for software developers. With you every step of your journey.
+
+Home
+DEV++
