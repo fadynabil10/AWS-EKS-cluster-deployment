@@ -38,7 +38,7 @@ Reach out with questions or for collaboration:
 - [Twitter](https://twitter.com/aws-builders)
 
 ## 🚀 Getting Started
-To get started, clone this repository and refer to the [tutorial blog](https://dev.to/aws-builders/spin-up-an-amazon-eks-cluster-in-minutes-2666-temp-slug-667873?preview=205922cdaf933b01455dba5ef201bc8b1be8e0ab2767205d094c9878ebf54720f80151d0251fb19d9e37d26216e61ac73799e52d91fbe23c37b97530) for detailed setup instructions.
+To get started, clone this repository and refer to the [tutorial blog](https://dev.to/aws-builders/spin-up-an-amazon-eks-cluster-in-minutes-3g62) for detailed setup instructions.
 
 ---
 Happy Learning! 🚀
